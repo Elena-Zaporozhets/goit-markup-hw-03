@@ -123,7 +123,7 @@ background: #2e2f42;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    margin-top: 124px;
+    margin-top: 48px;
     margin-right: auto;
     margin-left: auto;
     line-height: 1.5;
@@ -146,8 +146,6 @@ background: #2e2f42;
 }
 .points-link {display: flex;
 align-items: center;
-padding-top: 115px;
-padding-bottom: 120px;
 gap: 24px;}
 
 .points-list {width: calc((100% - 72px) /4);}
@@ -172,8 +170,7 @@ gap: 24px;}
 .team {background-color: #f4f4fd;;}
 .team-list {display: flex;
 align-items: center;
-gap: 24px;
-padding-bottom: 120px;}
+gap: 24px;}
 
 .team-item {
     background: #fff;
@@ -187,15 +184,13 @@ border-radius: 0 0 4px 4px;}
     text-transform: capitalize;
         font-weight: 700;
         font-size: 36px;
-        padding-top:  120px;
         margin-bottom: 72px;
 
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2e2f42;}
-.team-title {padding: 0 49px;
+.team-title {
     margin-bottom: 8px;
-    margin-top: 32px;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
@@ -203,8 +198,7 @@ border-radius: 0 0 4px 4px;}
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;}
-.team-text {padding-top: 8px;
-    margin-bottom: 32px;
+.team-text {
     text-align: center;
     font-weight: 400;
     font-size: 16px;
@@ -214,7 +208,7 @@ border-radius: 0 0 4px 4px;}
     color: #434455;}
 
 
-.portfolio .portfolio-title-main {padding-top: 120px;
+.portfolio .portfolio-title-main {
     margin-bottom: 72px;
     text-align: center;
     text-transform: capitalize;
@@ -231,7 +225,6 @@ justify-content: space-between;
 margin: 0;
 column-gap: 24px;
 row-gap: 48px;
-padding-bottom: 120px;
 }
 
 .portfolio-item {
@@ -241,11 +234,12 @@ width: calc((100% - 48px) /3);
 .portfolio-group {padding: 32px 16px;
     border-top: none;
     border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
     }
 
 .portfolio-title {
     margin-bottom: 8px;
-padding-top: 32px;
 text-align: left;
         font-weight: 500;
         font-size: 20px;
@@ -255,7 +249,6 @@ text-align: left;
         color: #2e2f42;}
 
 .portfolio-descr {
-        padding-bottom: 32px;
         text-align: left;
         font-weight: 400;
         font-size: 16px;
