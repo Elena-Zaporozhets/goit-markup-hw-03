@@ -13,6 +13,8 @@ ul {list-style: none;
 margin: 0;
 padding: 0;}
 
+img {display: block;}
+
 .container {max-width: 1158px;
 padding: 0 15px;
 margin: 0 auto;}
@@ -96,6 +98,7 @@ gap: 40px;}
 
 .main {
 text-align: center;
+padding: 188px 0;
 background: #2e2f42;
 }
 
@@ -103,7 +106,6 @@ background: #2e2f42;
     text-align: center;
     max-width: 496px;
     margin: 0 auto;
-    padding-top: 128px;
     font-weight: 700;
     font-size: 56px;
 
@@ -112,13 +114,16 @@ background: #2e2f42;
     color: #fff;}
 
 .main-btn {cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     background: #4d5ae5;
     padding: 16px 32px;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    margin-top:  108px;
-    margin-bottom: 188px;
+    margin-top: 124px;
     margin-right: auto;
     margin-left: auto;
     line-height: 1.5;
@@ -150,7 +155,7 @@ gap: 24px;}
 .points-link .points-title {
     font-weight: 500;
     font-size: 20px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -172,7 +177,10 @@ padding-bottom: 120px;}
 
 .team-item {
     background: #fff;
-width: calc((100% - 72px) /4);}
+width: calc((100% - 72px) /4);
+border-radius: 0 0 4px 4px;}
+
+.team-group {padding: 32px 0;}
 
 .team-main-title {
     text-align: center;
@@ -180,12 +188,13 @@ width: calc((100% - 72px) /4);}
         font-weight: 700;
         font-size: 36px;
         padding-top:  120px;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2e2f42;}
-.team .team-title {padding: 0 49px;
+.team-title {padding: 0 49px;
+    margin-bottom: 8px;
     margin-top: 32px;
     text-align: center;
     font-weight: 500;
@@ -194,7 +203,7 @@ width: calc((100% - 72px) /4);}
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;}
-.team .team-text {padding-top: 8px;
+.team-text {padding-top: 8px;
     margin-bottom: 32px;
     text-align: center;
     font-weight: 400;
@@ -206,7 +215,7 @@ width: calc((100% - 72px) /4);}
 
 
 .portfolio .portfolio-title-main {padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: center;
     text-transform: capitalize;
     font-weight: 700;
@@ -220,16 +229,22 @@ width: calc((100% - 72px) /4);}
 flex-wrap: wrap;
 justify-content: space-between;
 margin: 0;
-row-gap: 24px;
+column-gap: 24px;
+row-gap: 48px;
 padding-bottom: 120px;
 }
 
 .portfolio-item {
-border-bottom: 1px solid #e7e9fc;
-border-left: 1px solid #e7e9fc;
-border-right: 1px solid #e7e9fc;}
+width: calc((100% - 48px) /3);
+}
 
-   .portfolio .portfolio-list .portfolio-title {
+.portfolio-group {padding: 32px 16px;
+    border-top: none;
+    border-bottom: 1px solid #e7e9fc;
+    }
+
+.portfolio-title {
+    margin-bottom: 8px;
 padding-top: 32px;
 text-align: left;
         font-weight: 500;
@@ -238,8 +253,8 @@ text-align: left;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;}
-      .portfolio .portfolio-list .portfolio-descr {
-        padding-top: 8px;
+
+.portfolio-descr {
         padding-bottom: 32px;
         text-align: left;
         font-weight: 400;
@@ -252,16 +267,20 @@ text-align: left;
 .end-container {
 display: flex;
 flex-direction: column;
-align-items: center;
-margin-right: 1020px;
-padding-bottom: 100px;}
+align-items: baseline;
+text-align: left;
+justify-content: center;
+padding-right: 1020px;
+padding:  100px 0;
+padding-bottom: 100px;
+margin: 0 auto;}
 
 .end {background-color:#2e2f42;}
 .end .footer-logo {font-family: "Raleway", sans-serif;
-
+    display: inline-block;
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 18px;
-    margin-top: 100px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -273,8 +292,7 @@ padding-bottom: 100px;}
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #f4f4fd;}
-    .end-text {
-        padding-top: 16px;
+    .end-text {max-width: 264px;
         font-weight: 400;
         font-size: 16px;
 
