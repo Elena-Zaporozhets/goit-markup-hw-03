@@ -285,6 +285,7 @@ margin: 0 auto;}
     text-transform: uppercase;
     color: #4d5ae5;}
     .end .footer-name {font-family: "Raleway", sans-serif;
+        display: inline-block;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.17;
